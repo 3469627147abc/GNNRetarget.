@@ -1,11 +1,10 @@
-# Unsupervised human-to-robot motion retargeting via expressive latent space
+# GNNRetarget: Vision-Guided Dexterous Robot Teleoperation via Graph Neural Network-Based Motion Retargeting
 
 
-Webpage for "Unsupervised human-to-robot motion retargeting via expressive latent space"
-- Yashuai Yan
-- Esteve Valls Mascaro
-- Dongheui Lee
+Webpage for "GNNRetarget: Vision-Guided Dexterous Robot Teleoperation via Graph Neural Network-Based Motion Retargeting"
+- Yuanchuan Lai
+- Qing Gao
 
-Autonomous Systems, TU Wien, 1040 Wien
-German Aerospace Center (DLR)
+School of Electronics and Communica tion Engineering, Sun Yat-sen University,
+Shenzhen
                 
