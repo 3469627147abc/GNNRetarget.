@@ -199,24 +199,7 @@
  -->
 
   <section class="hero is-small">
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="container">
-        <div class="item">
-          <p style="margin-bottom: 30px">
- 
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/videos/overview.mp4"
-          type="video/mp4">
-        </video>
-        </p>
-        </div>
-    </div>
-  </div>
-  </div>
-  </div>
-</section>
+
     
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -227,7 +210,30 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          This paper introduces a novel deep-learning approach for human-to-robot motion retargeting, enabling robots to mimic human poses accurately. Contrary to prior deep-learning-based works, our method does not require paired human-to-robot data, which facilitates its translation to new robots. First, we construct a shared latent space between humans and robots via adaptive contrastive learning that takes advantage of a proposed cross-domain similarity metric between the human and robot poses.  Additionally, we propose a consistency term to build a common latent space that captures the similarity of the poses with precision while allowing direct robot motion control from the latent space. For instance, we can generate in-between motion through simple linear interpolation between two projected human poses. We conduct a comprehensive evaluation of robot control from diverse modalities (i.e., texts, RGB videos, and key poses), which facilitates robot control for non-expert users. Our model outperforms existing works regarding human-to-robot retargeting in terms of efficiency and precision. Finally, we implemented our method in a real robot with self-collision avoidance through a whole-body controller to showcase the effectiveness of our approach.
+         Teleoperation plays a pivotal role in executing
+complex tasks by extending human capabilities to robotic
+systems. However, existing teleoperation systems often require
+elaborate human motion capture setups while failing to account
+for the scale discrepancies between hands and bodies, leading
+to accuracy not being optimal. Additionally, their retargeting
+methods face challenges such as high computational complexity,
+susceptibility to local minima, and inaccuracies in mapping
+unseen motions. Moreover, these methods are typically tailored
+to specific robot platforms, lacking generalization capabilities.In
+this paper, we propose a novel vision-guided teleoperation
+framework and retargeting approach to address these limitations. Our framework employs a dual-stream architecture,
+processing hands and bodies separately to effectively mitigate
+scale discrepancies, thereby enhancing precision. The proposed
+retargeting method integrates a graph encoder network to
+generate meaningful initial embeddings, subsequently optimized
+in the latent space. This strategy significantly reduces complexity while circumventing local minima issues. Crucially,
+by graphically modeling human poses and robot files, our
+method eliminates the need for paired datasets, enabling broad
+applicability across diverse robots. Experiments successfully
+replicate human motions and validate the feasibility and accuracy of human-robot motion retargeting in both simulated
+environments on RMC-DA, YuMi, and Unitree H1, as well as
+the real-world RMC-DA, underscoring the practical value of
+our vision-guided teleoperation framework.
           </p>
         </div>
       </div>
@@ -241,7 +247,7 @@
     <div class="container">
 
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/overview.jpg" alt="Motivation of our model"/>
+        <img src="static/figures/Figure2.png" alt="Motivation of our model"/>
       </div>    
   </div>
 </div>
