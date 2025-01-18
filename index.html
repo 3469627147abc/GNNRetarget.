@@ -391,7 +391,10 @@ our vision-guided motion retargeting framework.
       <div class="column is-four-fifths">
         <h2 class="title is-3">Framework For Motion Retargeting</h2>
           <p>
-         The framework consists of two parts: a visual teleoperation pipeline and a graph neural network-based motion retargeting module called GNNRetarget. The visual teleoperation part captures the operator's motion from an RGB camera and extracts hand and body motion data. The GNNRetarget module takes these motion data as input to encoders, performs latent optimization to map them to robot hand and body motions, which are then executed on the physical robot after optimization.
+         Schematic of the overall design framework for motion retargeting. The upper block represents the two-stream visual motion retargeting framework,
+while the lower block depicts the structure of the graph neural network-based retargeting method, GNNRetarget. The RGB camera captures visual
+information, which is then processed using visual extraction techniques to obtain the operator’s pose. This pose data is subsequently fed into the GNNRetarget
+module for latent optimization, ultimately yielding the optimized pose for robot control
           </p>
         </div>
       </div>
